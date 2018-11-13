@@ -1,404 +1,89 @@
 <!DOCTYPE html>
-<html land="fa" dir="rtl">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--><!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+<html lang='en'>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="MetaLab Research Group">
-    <link href='/img/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'>
-    <title>
-      metalab.ir
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0," />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/tooltip-line.css">
-    <link rel="stylesheet" href="css/evil-icons.min.css">
-    <script src="js/evil-icons.min.js"></script>
-    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-<style type="text/css">
-</style>
+    <meta charset='UTF-8'>
+    <title>MetaLab Research Group</title>
+    <meta content='MetaLab Research Group | Institute for Cognitive and Brain Science (ICBS)'
+          property='og:title'>
+    <meta content='website' property='og:type'>
+    <meta content='http//metalab.ir' property='og:url'>
+    <meta content='' property='og:description'>
+    <meta content='/images/logo_coax.jpg' property='og:image'>
+    <link href='images/fav_icon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport'>
+    <link href='css/style_vendor.min.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <script src='js/libs.min.js'></script>
+    <script src='js/app.js'></script>
+    <meta content='MetaLab Research Group | Institute for Cognitive and Brain Science'
+          name='description'>
 </head>
-<body>
-    <style>
-      @font-face {
-        font-family: 'IRANSans';
-        src: url('fonts/IRANSansWeb.eot'), /* IE9 Compat Modes */
-             url('fonts/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
-             url('fonts/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
-             url('fonts/IRANSansWeb.ttf')  format('truetype'); /* Safari, Android, iOS */
-      }
-      * {
-        font-family: IRANSans;
-      }
-      body {
-        overflow-x: hidden;
-      }
-      .wp-header {
-        text-align: center;
-        opacity: 0.4;
-      }
-      .container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-weight: 300;
-        font-style: normal;
-        font-weight: 300;
-        font-variant: normal;
-        width: 100vw;
-        height: 100vh;
-        speak: none;
-        text-transform: none;
-        background-color: #eee;
-        color: rgba(255, 255, 255, 0.5);
-        margin: 0;
-        font-size: 18px;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        min-width: 320px;
-        min-height: 640px; }
-      .motto {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        min-height: 640px;
-        min-width: 320px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        pointer-events: none;
-        font-weight: 300;
-        transition: height 0.2s;
-        z-index: 100; }
-      .tagline {
-        display: block;
-        margin-bottom: 8vh;
-        text-align: center;
-        font-size: 2.6em;
-        color: #222;
-        opacity: 0.87;
-        font-weight: 300;
-        transition: font-size 0.2s;
-        letter-spacing: -0.05em;
-      }
-      .white {
-        fill: white;
-      }
-      .btn {
-          display: inline-block;
-          padding: 6px 12px;
-          margin-bottom: 0;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 1.42857143;
-          text-align: center;
-          white-space: nowrap;
-          vertical-align: middle;
-          -ms-touch-action: manipulation;
-          touch-action: manipulation;
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
-          background-image: none;
-          border: 1px solid transparent;
-          border-radius: 4px;
-          cursor: pointer;
-          color: white;
-          pointer-events: all;
-      }
-      /*.btn:hover {
-          color: #333;
-          text-decoration: none;
-      }*/
-      .btn-primary {
-          color: #fff;
-          background-color: #337ab7;
-          border-color: #2e6da4;
-      }
-      .order-btn-main-page {
-          width: 170px;
-          background-color: #286090;
-          border-color: #204d74;
-          color: #fff;
-          font-weight: bold;
-          padding-top: 9px;
-          height: 40px;
-          margin: 5px;
-      }
-      .download-btn-main-page {
-          width: 170px;
-          background-color: #2ac137;
-          border-color: #457420;
-          color: #fff;
-          font-weight: bold;
-          padding-top: 9px;
-          height: 40px;
-          margin: 5px;
-      }
-      .icon--m {
-        width: 30px;
-        height: 30px;
-        margin: 0 10px;
-        font-weight: bold;
-      }
-      @media screen and (max-width: 800px) {
-        .tagline {
-          transition: font-size 0.2s;
-          font-size: 4vw;
-          margin-bottom: 3vh;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        .tagline {
-          font-size: 7vw;
-          margin-bottom: 3vh;
-        }
-      }
-      .subtweet {
-        display: block;
-        margin: 1em auto;
-        text-transform: uppercase;
-        font-size: 0.45em;
-        letter-spacing: 0; }
+<body class='index'>
+<style>
+    @font-face {
+       font-family: 'IRANSans';
+       src: url('fonts/IRANSansWeb.eot'), /* IE9 Compat Modes */
+            url('fonts/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+            url('fonts/IRANSansWeb.ttf')  format('truetype'); /* Safari, Android, iOS */
+     }
 
-      .bubble-edu {
-        align-self: center;
-        /*margin-top: 5vh;*/
-        /*font-size: 1vw;
-        overflow: hidden;
-        width: 18em;
-        height: 18em;
-        border-radius: 10em;*/
-        /*background-color: #0C92F3;*/
-        cursor: pointer;
-        color: white;
-        pointer-events: all;
-        /*transition: font-size 0.2s;*/
-      }
-        @media screen and (max-width: 800px) {
-          .bubble-edu {
-            transition: font-size 0.2s;
-            font-size: 1.2vw;
-            align-self: center;
-            margin-right: 0;
-            margin-bottom: 2em;} }
-        @media screen and (max-width: 500px) {
-          .bubble-edu {
-            transition: font-size 0.2s;
-            font-size: 3vw;} }
-        .bubble-edu .bubble-title-group {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          width: 18em;
-          height: 9em; }
-        .bubble-edu .bubble-title {
-          width: 100%;
-          text-align: center;
-          font-size: 1.8em;
-          font-weight: 400;
-          line-height: 1;
-          padding: 0 1em; }
-        .bubble-edu .bubble-subtitle {
-          width: 18em;
-          text-align: center;
-          font-weight: 400;
-          text-transform: uppercase;
-          margin: 0.4em 0 1em 0; }
+ </style>
+<div class='wrap'>
+    <div class='container-fluid block top'>
+        <div class='top_left' id='coax'>
+            <div class='coax'>
+                <div class='img' id='oval-level_4' style='background-image: url(images/svg/oval-level_4.svg)'></div>
+                <div class='img' id='oval-level_3' style='background-image: url(images/svg/oval-level_3.svg)'></div>
+                <div class='img' id='oval-level_2' style='background-image: url(images/svg/oval-level_2.svg)'></div>
+                <div class='img' id='oval-level_1' style='background-image: url(images/svg/oval-level_1.svg)'></div>
 
-
-      .bubble-image-group {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center; }
-
-      .bubble-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        margin: auto; }
-
-      .bubble-arrow {
-        width: 3em;
-        height: 3em;
-        z-index: 9;
-        margin-top: 5em; }
-
-      .bubbles {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        margin: 5em 0;
-        z-index: 0; }
-
-      .bubble-edu-ie11 {
-        display: none;
-      }
-      .bubble-shape {
-        position: absolute;
-        display: inline-block;
-        top: 0;
-        left: 0;
-        width: 10vw;
-        height: 10vw;
-        margin: auto;
-       /*background-color: rgba(36, 66, 62, 0.75);*/
-        background-color: rgba(105, 14, 175, 0.55);
-        border-radius: 10vw; }
-        .bubble-shape.bubble-1 {
-          top: 30vh;
-          right: -90vw;
-          transform: scale(2); }
-        .bubble-shape.bubble-2 {
-          top: 30vh;
-          left: 0vw;
-          transform: scale(6); }
-        .bubble-shape.bubble-3 {
-          top: 0vh;
-          right: -80vw;
-          transform: scale(5); }
-        .bubble-shape.bubble-4 {
-          top: 10vh;
-          left: 25vw;
-          transform: scale(1.5); }
-        .bubble-shape.bubble-5 {
-          top: 110vw;
-          left: 40vw;
-          transform: scale(15); }
-
-      .scene {
-        margin: 0;
-        padding: 0;
-        height: 100vh; }
-
-      .layer {
-        width: 100%;
-        height: 100%; }
-
-      .foot {
-        opacity: 1;
-        position: absolute;
-        bottom: 1em;
-        width: 100%;
-        height: 2.4em;
-        text-align: center;
-        font-size: 0.9em;
-        transition: opacity 0.2s;
-        pointer-events: all;
-      }
-      @media screen and (min-height: 640px) {
-        .foot {
-          transition: opacity 0.2s;
-          opacity: 0.75;
-        }
-      }
-      /*@media screen and (max-width: 500px) {
-        .foot {
-          font-size: 0.34em;} }
-      .foot a {
-        color: white;
-        text-decoration: none;
-      }*/
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        .motto {
-          height: 90vh;
-          display: block;
-          text-align: center;
-        }
-        /*.foot {
-          pointer-events: all;
-          cursor: pointer;
-        }*/
-        .bubble-edu {
-          display: none;
-        }
-        .bubble-edu-ie11 {
-          width: 266px;
-          height: 266px;
-          display: block;
-          margin: 0 auto;
-          pointer-events: all;
-        }
-        .bubble-edu-ie11 .bubble-image {
-          position: relative;
-          width: 266px;
-          height: 266px;
-        }
-        .tagline {
-          margin-top: 20px;
-          margin-bottom: 0;
-          min-height: 480px;
-        }
-      }
-
-    </style>
-      <div class="motto">
-        <span class="tagline">
-MetaLab Research Group
-            <span class="subtweet">
-            پژوهشکده علوم شناختی و مغز دانشگاه بهشتی
-          </span>
-          <a target="_blank" href="https://metalabgroup.typeform.com/to/ukGWUu" class="btn btn-secondary order-btn-main-page">شرکت در آزمون</a>
-        </span>
-        <div class="foot">
-          <a class="tooltip" target="_blank" href="https://www.google.com/maps/place/Institute+for+Cognitive+and+Brain+Science/@35.796189,51.3958427,16z/data=!4m5!3m4!1s0x0:0x3672b056665e098a!8m2!3d35.796102!4d51.396347">
-            <div data-icon="ei-location" data-size="m" class="white"></div>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">آدرس پژوهشکده</span>
-              </span>
-            </span>
-          </a>
-          
-          <a class="tooltip" href="tel:09032244789">
-            <div data-icon="ei-link" data-size="m" class="white"></div>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">تماس با پشتیبانی</span>
-              </span>
-            </span>
-          </a>
+            </div>
+            <div class='top_info'>
+                <h1>
+                    MetaLab Research Group
+                </h1>
+                <p class='sub-h1'>
+                    Institute for Cognitive and Brain Science
+                </p>
+                <a class='button button-outline-white button_medium' href='http://en.sbu.ac.ir/Research_Institutes/Institute%20for%20Brain_cognitiveScience/Pages/default.aspx' target="_blank" 'http://en.sbu.ac.ir/Research_Institutes/Institute%20for%20Brain_cognitiveScience/Pages/default.aspx'>
+                    More info
+                </a>
+            </div>
         </div>
-      </div>
-        <div id="container" class="container">
-          <div id="scene" class="scene">
-            <span class=" layer" data-depth="1.00">
-              <span class="bubble-shape bubble-1"></span>
-            </span>
-            <span class="layer" data-depth="0.80">
-              <span class="bubble-shape bubble-2"></span>
-            </span>
-            <span class="layer" data-depth="0.60">
-              <span class="bubble-shape bubble-3"></span>
-            </span>
-            <span class="layer" data-depth="0.40">
-              <span class="bubble-shape bubble-4"></span>
-            </span>
-            <span class="layer" data-depth="0.30">
-              <span class="bubble-shape bubble-5"></span>
-            </span>
-          </div>
-        </div>
-        <script src="js/parallax.js"></script>
-        <script>
-          var scene = document.getElementById('scene');
-          var parallax = new Parallax(scene);
-        </script>
+        <aside class='top_right-bar'>
+            <div class='side-item'>
+                <img alt='icon-web_development' src='images/svg/technology/web_development.svg'>
+                <h6>
+                    مشارکت با ما
+                </h6>
 
-      </body>
+                <a class='button button-outline-white' href='https://metalabgroup.typeform.com/to/ukGWUu'>
+                    آزمون
+                </a>
+            </div>
+            <div class='side-item'>
+                <img alt='icon-web_development' src='images/svg/technology/web_development/ai.svg'>
+                <h6>
+                    گروه پژوهشی متالب
+                </h6>
+
+                <a class='button button-outline-white' href='https://www.metalab.ir/about_us.html'>
+                    درباره ما
+                </a>
+            </div>
+            <div class='side-item'>
+                <img alt='icon-web_development' src='images/svg/technology/product_design.svg'>
+                <h6>
+                    پشتیبانی
+                </h6>
+
+                <a class='button button-outline-white' href='tel:09032244789'>
+                    تماس
+                </a>
+            </div>
+        </aside>
+    </div>
+</div>
+</body>
 </html>

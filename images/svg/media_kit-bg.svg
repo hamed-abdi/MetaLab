@@ -1,0 +1,14 @@
+<svg height="225" viewBox="0 0 1305 225" width="1305" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="media_kit-bg" height="225" viewBox="0 0 1305 225" width="1305" fill-rule="evenodd" fill="none">
+    <polygon fill="#2DC7FF" id="obj_1" points="664.726 204 677.583 211.726 669.858 224.583 657 216.858"></polygon>
+    <polygon fill="#0F2765" id="obj_2" points="6.889 7.171 8.707 13.954 1.924 15.772 .106 8.988"></polygon>
+    <polygon fill="#2DC7FF" id="obj_3" points="1300.726 117 1304.275 119.133 1302.142 122.682 1298.593 120.549"></polygon>
+    <circle cx="264" cy="10" fill="#2154CF" id="obj_4" r="10"></circle>
+    <circle cx="987.5" cy="100.5" fill="#153587" id="obj_5" r="7.5"></circle>
+    <circle cx="1163" cy="12" fill="#0C1F51" id="obj_6" r="5"></circle>
+    <circle cx="184.5" cy="135.5" fill="#0F2765" id="obj_7" r="4.5"></circle>
+    <circle cx="59.5" cy="114.5" fill="#2DC7FF" id="obj_8" r="2.5"></circle>
+    <circle cx="610" cy="166" fill="#0F2765" id="obj_9" r="2"></circle>
+    <circle cx="916" cy="7" fill="#2DC7FF" id="obj_10" r="7"></circle>
+  </symbol>
+</svg>
